@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>form表单</title>
+</head>
+<body>
+	<form method="post" action="save.php">
+		<label for = "username" >用户名</label>
+		<input type="text" name="username" id="username" value="" /><br>
+		<label for="pass">密码</label>
+		<input type="password" name="pass" id="pass" value="" /><br>
+		<input type="submit" value="确定" name="submit" />
+		<input type="reset" value="重置" name="reset" />
+		<!-- 文本域 --><br>
+		<textarea cols="30" rows="20">输入</textarea><br>
+		<input type="submit" name="submit" value="确定"/>
+		<input type="reset" name="reset" value="重置"/>
+		<!-- 单选框，复选框 --><br>
+		<label>性别:</label>
+		<label for="male">男</label>
+		<input type="radio" id="male" name="sex" value="1" />
+		<input type="radio" name="sex" id="women" value="2"/>女
+		<br /><br/>
+		<label>你喜欢运动吗？</label><br/>
+		<input type="radio" name="travel" value="喜欢" checked="checked"/>喜欢
+		<input type="radio" name="travel" value="不喜欢"/>不喜欢
+		<input type="radio" name="travel" value="无所谓"/>无所谓
+		<br/>
+		<label>你喜欢的运动:</label><br/>
+		<label for="run">跑步</label>
+		<input type="checkbox" id="run" name="sports" value="跑步"/>
+		<label for="practice">健身</label>
+		<input type="checkbox" id="practice" name="sports" value="健身"/>
+		<label for="swimming">游泳</label>
+		<input type="checkbox" id="swimming" name="sports" value="游泳"/>
+		<br/>
+		<!-- 下拉列表框 -->
+		<label>爱好：</label>
+		<select>
+			<option value="看书">看书</option>
+			<option value="音乐" selected="selected">i音乐</option>
+			<option value="运动">i运动</option>
+		</select>
+		<br/><br/>
+		<!-- 复选下拉列表框 -->
+		<label>爱好：</label>
+		<select multiple="multiple">
+			<option value="看书">看书</option>
+			<option value="音乐">音乐</option>
+			<option value="运动">运动</option>
+		</select>
+		<br/>
+		<!--提交按钮-->
+		<label for="name">姓名：</label>
+		<input type="text" name="idname" id="name" value="" />
+		<input type="submit" name="submitBtn" value="提交"/>
+	</form>
+</body>
+</html>
