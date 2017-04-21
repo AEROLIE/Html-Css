@@ -18,7 +18,8 @@
 		<input type="reset" name="reset" value="重置"/>
 		<!-- 单选框，复选框 --><br>
 		<label>性别:</label>
-		<input type="radio" name="sex" value="1"/>男
+		<label for="male">男</label>
+		<input type="radio" id="male" name="sex" value="1" />
 		<input type="radio" name="sex" id="women" value="2"/>女
 		<br /><br/>
 		<label>你喜欢运动吗？</label><br/>
@@ -27,9 +28,33 @@
 		<input type="radio" name="travel" value="无所谓"/>无所谓
 		<br/>
 		<label>你喜欢的运动:</label><br/>
-		<input type="checkbox" name="sports" value="跑步"/>跑步
-		<input type="checkbox" name="sports" value="健身"/>健身
-		<input type="checkbox" name="sports" value="游泳"/>游泳
+		<label for="run">跑步</label>
+		<input type="checkbox" id="run" name="sports" value="跑步"/>
+		<label for="practice">健身</label>
+		<input type="checkbox" id="practice" name="sports" value="健身"/>
+		<label for="swimming">游泳</label>
+		<input type="checkbox" id="swimming" name="sports" value="游泳"/>
+		<br/>
+		<!-- 下拉列表框 -->
+		<label>爱好：</label>
+		<select>
+			<option value="看书">看书</option>
+			<option value="音乐" selected="selected">i音乐</option>
+			<option value="运动">i运动</option>
+		</select>
+		<br/><br/>
+		<!-- 复选下拉列表框 -->
+		<label>爱好：</label>
+		<select multiple="multiple">
+			<option value="看书">看书</option>
+			<option value="音乐">音乐</option>
+			<option value="运动">运动</option>
+		</select>
+		<br/>
+		<!--提交按钮-->
+		<label for="name">姓名：</label>
+		<input type="text" name="idname" id="name" value="" />
+		<input type="submit" name="submitBtn" value="提交"/>
 	</form>
 </body>
 </html>
