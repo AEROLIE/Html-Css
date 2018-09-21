@@ -39,5 +39,21 @@
 		ctx.fillRect(0,0,150,75);
 	</script>
 -->
+	<p id="demo">````</p>
+	<button onclick="getlocation()">点击</button>
+	<script type="text/javascript">
+	var x document.getElementById("demo");
+	function getlocation(){
+		if (navigator.getlocation)
+		{
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+		else{x.innerHTML="该浏览器不支持获取地理位置。"}
+	}
+	function showPosition(position)
+	{
+		x.innerHTML="Latitude:"+position.coords.latitude+"<br>Longitude:"+position.coords.longitude;
+	}
+	</script>
 </body>
 </html>
