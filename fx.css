@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+}
+.top-div{
+/*	background-color: #BFEFFF;*/
+}
+.logo{
+	width: 150px;
+	height: 150px;
+	vertical-align:middle;
+/*    display:inline-block;*/
+}
+.brand{
+	font-size: 50px;
+	font-family: 黑体;
+	vertical-align:middle;
+	display: inline-block;
+}
+.a1,.a2,.a3,.a4{
+	vertical-align:middle;
+	font-size: 30px;
+	padding-right: 120px;
+	display:inline-block;
+
+}
+.a1{
+	padding-left: 280px;
+}
